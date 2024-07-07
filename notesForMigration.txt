@@ -1,0 +1,15 @@
+create a new column in the existing db through the migration and column anme is "id"...
+
+
+below is migration commands, we need to follow.....
+
+npm install --save-dev sequelize-cli
+   4 npx sequelize-cli init
+   5 npx sequelize-cli migration:generate --name add-id-to-customers
+   6 npx sequelize-cli db:migrate
+   7 npx sequelize-cli db:migrate
+   8 npx sequelize-cli db:migrate
+   9 npx sequelize-cli db:migrate:undo
+  10 npx sequelize-cli db:migrate
+  11 npx sequelize-cli db:migrate:undo
+  12 npx sequelize-cli db:migrate
